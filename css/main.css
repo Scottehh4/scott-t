@@ -2575,8 +2575,10 @@ footer .copyright span:last-child::after {
     display: inline-block;
     width: 160px;
     text-align: center;
-    margin: 19px 0;
+    margin: 20px 0;
     font-size: 16pt;
+    font-family: "poppins-medium", sans-serif;
+    font-weight: bold;
 }
 .list-unstyled li {
 	list-style: none;
