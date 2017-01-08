@@ -7,20 +7,21 @@
 		<!--- basic page needs -->
 		<meta charset="utf-8">
 		<title>Scott Thornton | Curriculum Vitea</title>
-		<meta name="description" content="">  
+		<meta name="description" content="">
 		<meta name="author" content="">
 
 		<!-- mobile specific metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="css/base.css">  
+		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/vendor.css">     
+		<link rel="stylesheet" href="css/vendor.css">
 
 		<!-- script -->   
 		<script src="js/modernizr.js"></script>
 		<script src="js/pace.min.js"></script>
+		<script src="css/js/bootstrap.min.js"></script>
 
 		<!-- favicons -->
 		<link rel="icon" type="image/png" href="favicon.png">
@@ -36,18 +37,17 @@
 				<div class="top-bar">
 					<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-					<div>
+					<div class="logo-new">
 						<a href="index.html">SCOTT-T</a>
-					</div>		      
+					</div>
 
 					<nav id="main-nav-wrap">
 						<ul class="main-navigation">
-							<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-							<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-							<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-							<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-							<li><a class="smoothscroll"  href="#services" title="">Services</a></li>
-							<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
+							<li class="current"><a class="smoothscroll"  href="#intro" title="home">Home</a></li>
+							<li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+							<li><a class="smoothscroll"  href="#resume" title="resume">Resume</a></li>
+							<li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+							<li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div> <!-- /top-bar --> 
@@ -91,7 +91,7 @@
 
 					<div class="intro-info">
 						<img src="images/profile-pic.jpg" alt="Profile Picture">
-						<p class="lead">Well, Where to start?.. I'm a self confessed geek. I love to learn. I love a challenge &amp; will always strive to be #1. Coffee is my brain fuel, Football is my sport &amp; Tech is my passion. I love to game, have a laugh, and generally enjoy myself whilst working - A job you love is a job where you'll stay.</p>
+						<p class="lead">Well, Where to start?.. I'm a self confessed geek. I love to learn. I love a challenge &amp; will always strive to be #1. Coffee is my fuel, Football is my sport &amp; Tech is my passion. I love to game, have a laugh, and generally enjoy myself whilst working - A job you love is a job where you'll stay.</p>
 					</div>
 
 				</div>   		
@@ -102,7 +102,7 @@
 				<div class="col-six tab-full">
 
 					<h3>Profile</h3>
-					<p>Below you can find a few details about myself. Additional contact information can be found <a href="#contact">HERE</a>. Please do not hesitate to contact me with any queries you may have.</p>
+					<p>Below you can find a few details about myself. Additional contact information can be found <a class="smoothscroll" href="#contact">HERE</a>. Please do not hesitate to contact me with any queries you may have.</p>
 
 					<ul class="info-list">
 						<li>
@@ -163,7 +163,6 @@
 
 			<div class="row button-section">
 				<div class="col-twelve">
-					<a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
 					<a href="ScottThorntonCV.pdf" target="_blank" title="View My CV" class="button button-primary">View My CV</a>
 				</div>   		
 			</div>
@@ -431,7 +430,7 @@
 							<h3>Testing</h3>
 
 							<p class="desc">
-								I am still learning as a developer, and part of that learning is identifying weaknesses and putting together plans to improve on them. My weakness is when it comes to testing methodologies. I am looking at how I can implement different testing techniques whether it be Test Driven Development or Unit Testing. I want to be able to constantly identify my weak points and where I can improve, as I believe that if I know where the weakness is, I can constantly be learning and improving. Testing is my next port of call in this regard.
+								I am still learning as a developer, and part of that learning is identifying weaknesses and putting together plans to improve on them. My current weakness is when it comes to testing methodologies. I am actively looking at ways to improve on this. I want to be able to constantly identify my weak points and where I can improve, as I believe that if I know where the weakness is, I can constantly be learning and improving. Testing is my next port of call in this regard.
 							</p> 
 
 						</div>                
@@ -447,8 +446,17 @@
 							<h3>Development Lifecycle</h3>
 
 							<p class="desc">
-								I understand the development lifecycle. I understand what is important, how projects should be tackled &amp; can also provide input when deciding the best way to proceed with a proposed project. I see the lifecycle as: Plan > Analyse > Design > Develop > Test > Implement > Maintain.
-							</p> 
+								I understand the development lifecycle. I understand what is important, how projects should be tackled &amp; can also provide input when deciding the best way to proceed with a proposed project. I see the lifecycle as:</p>
+
+							<ul class="list-unstyled">
+								<li>1. Plan</li>
+								<li>2. Analyse</li>
+								<li>3. Design</li>
+								<li>4. Develop</li>
+								<li>5. Test</li>
+								<li>6. Implement</li>
+								<li>7. Maintain</li>
+							</ul> 
 
 						</div>	               
 
@@ -474,70 +482,9 @@
 
 			</div> <!-- /services-content -->
 
-		</section> <!-- /services -->	
+		</section> <!-- /services -->
 
-
-	<!-- contact -->
 		<section id="contact">
-
-			<div class="row section-intro">
-				<div class="col-twelve">
-
-					<h5>Contact</h5>
-					<h1>I'd Love To Hear From You.</h1>
-
-					<p class="lead">If you have any questions or queries, feel free to use the below form to email me directly. This mailbox is monitored daily and I will usually respond within 24 hours. If I don't, try giving me a ring!</p>
-
-				</div> 
-			</div> <!-- /section-intro -->
-
-			<div class="row contact-form">
-
-				<div class="col-twelve">
-
-					<!-- form -->
-					<form name="contactForm" id="contactForm" method="post" action="">
-						<fieldset>
-
-							<div class="form-field">
-								<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-							</div>
-							<div class="form-field">
-								<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-							</div>
-							<div class="form-field">
-								<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-							</div>                       
-							<div class="form-field">
-								<textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50" required=""></textarea>
-							</div>                      
-							<div class="form-field">
-								<button class="submitform">Submit</button>
-								<div id="submit-loader">
-									<div class="text-loader">Sending...</div>                             
-									<div class="s-loader">
-										<div class="bounce1"></div>
-										<div class="bounce2"></div>
-										<div class="bounce3"></div>
-									</div>
-								</div>
-							</div>
-
-						</fieldset>
-					</form> <!-- Form End -->
-
-					<!-- contact-warning -->
-					<div id="message-warning">            	
-					</div>            
-					<!-- contact-success -->
-					<div id="message-success">
-						<i class="fa fa-check"></i>Your message was sent, thank you!<br>
-					</div>
-
-				</div> <!-- /col-twelve -->
-
-			</div> <!-- /contact-form -->
-
 			<div class="row contact-info">
 
 				<div class="col-four tab-full">
